@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'budget-app';
+
+  ngOnInit(){
+    
+  }
+
+  buttonClicked(){
+    document.getElementById('title-box').classList.remove('slide-in-blurred-bottom');
+    document.getElementById('title-box').classList.add('slide-in-blurred-top');
+  }
 }
